@@ -1,0 +1,62 @@
+// COLOR VARIABLES
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest:75em;
+$bp-large:62.5em;
+$bp-medium:50em;
+$bp-small:37.5em;
+:root{
+--shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+}
+
+*,*::after,*::before{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size:62.5%;
+
+  @media only screen and (max-width:$bp-largest){
+    font-size:50%;
+  }
+}
+
+body{
+  font-family: $font-primary;
+  color:$color-grey-dark-2;
+  font-weight:300;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom,rgba(126,213,111,0.8), rgba(40,180,133,0.8)),url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height:100vh;
+}
